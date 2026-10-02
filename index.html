@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
 
@@ -10,18 +10,18 @@
 
   <meta
     name="description"
-    content="Architecture / Human Scale 2027 — Designing the spaces between people and cities."
+    content="ملتقى القيادة وصناعة القرار 2027"
   >
 
-  <meta name="theme-color" content="#eeece7">
+  <meta name="theme-color" content="#092f35">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Architecture / Human Scale 2027">
+  <meta property="og:title" content="ملتقى القيادة وصناعة القرار 2027">
   <meta
     property="og:description"
-    content="Designing the spaces between people and cities."
+    content="حين تتحول الرؤية إلى قرار"
   >
   <meta property="og:url" content="">
   <meta property="og:image" content="">
@@ -30,43 +30,45 @@
   <meta name="twitter:card" content="summary">
   <meta
     name="twitter:title"
-    content="Architecture / Human Scale 2027"
+    content="ملتقى القيادة وصناعة القرار 2027"
   >
   <meta
     name="twitter:description"
-    content="Designing the spaces between people and cities."
+    content="حين تتحول الرؤية إلى قرار"
   >
 
-  <title>Architecture / Human Scale 2027</title>
+  <title>ملتقى القيادة وصناعة القرار 2027</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <a class="skip-link" href="#mainContent">
-    Skip to conference details
+  <a href="#mainContent" class="skip-link">
+    الانتقال إلى تفاصيل الملتقى
   </a>
 
 
   <!-- =====================================================
-       TOP BAR
+       TOPBAR
   ====================================================== -->
 
   <header class="topbar">
 
     <a
-      class="brand"
       href="#hero"
-      aria-label="Back to invitation opening"
+      class="brand"
+      aria-label="العودة إلى بداية الدعوة"
     >
-      <span class="brand-axis" aria-hidden="true">
-        <span></span>
+
+      <span class="brand-node" aria-hidden="true">
+        <i></i>
       </span>
 
       <span data-field="shortName">
-        A/HS 27
+        LDF 27
       </span>
+
     </a>
 
 
@@ -74,9 +76,9 @@
       id="topShareButton"
       class="top-share"
       type="button"
-      aria-label="Share invitation"
+      aria-label="مشاركة الدعوة"
     >
-      Share
+      مشاركة
     </button>
 
   </header>
@@ -91,136 +93,62 @@
     <section class="hero" id="hero">
 
       <div
-        class="hero-drawing"
+        class="hero-path"
         aria-hidden="true"
       >
 
         <svg
-          class="hero-drawing__svg"
-          viewBox="0 0 1000 760"
+          viewBox="0 0 500 820"
           preserveAspectRatio="none"
         >
-
-          <!-- AXES -->
-          <line
-            class="draw-line draw-line--1"
-            x1="120"
-            y1="60"
-            x2="120"
-            y2="700"
-          />
-
-          <line
-            class="draw-line draw-line--2"
-            x1="55"
-            y1="590"
-            x2="940"
-            y2="590"
-          />
-
-
-          <!-- BUILDING SECTION -->
           <path
-            class="draw-line draw-line--3"
+            class="hero-path__base"
             d="
-              M200 590
-              L200 390
-              L310 390
-              L310 260
-              L480 260
-              L480 410
-              L640 410
-              L640 325
-              L790 325
-              L790 590
+              M250 20
+              L250 190
+              C250 245 155 245 155 320
+              L155 410
+              C155 470 250 465 250 535
+              C250 465 345 470 345 410
+              L345 320
+              C345 245 250 245 250 190
+              L250 800
             "
           />
 
-
-          <!-- LEVELS -->
-          <line
-            class="draw-line draw-line--4"
-            x1="165"
-            y1="390"
-            x2="840"
-            y2="390"
+          <path
+            class="hero-path__active"
+            d="
+              M250 20
+              L250 190
+              C250 245 155 245 155 320
+              L155 410
+              C155 470 250 465 250 535
+              C250 465 345 470 345 410
+              L345 320
+              C345 245 250 245 250 190
+              L250 800
+            "
           />
-
-          <line
-            class="draw-line draw-line--5"
-            x1="165"
-            y1="260"
-            x2="560"
-            y2="260"
-          />
-
-
-          <!-- DIMENSIONS -->
-          <line
-            class="dimension-line"
-            x1="165"
-            y1="650"
-            x2="790"
-            y2="650"
-          />
-
-          <line
-            class="dimension-tick"
-            x1="165"
-            y1="635"
-            x2="165"
-            y2="665"
-          />
-
-          <line
-            class="dimension-tick"
-            x1="790"
-            y1="635"
-            x2="790"
-            y2="665"
-          />
-
         </svg>
 
 
-        <span class="drawing-label drawing-label--a">
-          A
-        </span>
-
-        <span class="drawing-label drawing-label--1">
-          01
-        </span>
-
-        <span class="drawing-label drawing-label--level">
-          +04.20
-        </span>
-
-        <span class="drawing-label drawing-label--dimension">
-          42.00 M
-        </span>
+        <span class="hero-path__node hero-path__node--1"></span>
+        <span class="hero-path__node hero-path__node--2"></span>
+        <span class="hero-path__node hero-path__node--3"></span>
 
       </div>
 
 
       <div class="hero-content">
 
-        <div class="hero-overline reveal">
-
-          <span>
-            Official Conference Invitation
-          </span>
-
-          <span>/</span>
-
-          <span data-field="organizer">
-            Urban Form Institute
-          </span>
-
-        </div>
+        <p class="hero-kicker reveal">
+          دعوة رسمية
+        </p>
 
 
-        <p class="drawing-code reveal">
-          A–01 / SECTION
+        <p class="hero-question reveal">
+          أين يبدأ القرار؟
         </p>
 
 
@@ -228,7 +156,7 @@
           class="hero-title reveal"
           data-field="name"
         >
-          Architecture / Human Scale 2027
+          ملتقى القيادة وصناعة القرار 2027
         </h1>
 
 
@@ -236,59 +164,53 @@
           class="hero-tagline reveal"
           data-field="tagline"
         >
-          Designing the spaces between people and cities.
+          حين تتحول الرؤية إلى قرار
         </p>
 
 
-        <div class="hero-dimensions reveal">
+        <div class="hero-meta reveal">
 
-          <div class="dimension-data">
-
+          <div>
             <span>
-              DATE
+              التاريخ
             </span>
 
             <strong id="heroDate">
-              18.09.2027
+              16 تشرين الثاني 2027
             </strong>
-
           </div>
 
 
-          <div class="dimension-data">
-
+          <div>
             <span>
-              TIME
+              الوقت
             </span>
 
             <strong id="heroTime">
-              09:00 → 17:30
+              9:00 ص — 5:00 م
             </strong>
-
           </div>
 
 
-          <div class="dimension-data">
-
+          <div>
             <span>
-              LOCATION
+              المدينة
             </span>
 
             <strong id="heroCity">
-              Erbil / Iraq
+              بغداد — العراق
             </strong>
-
           </div>
 
         </div>
 
 
         <a
-          href="#sectionMarker"
           class="hero-enter reveal"
+          href="#decision"
         >
           <span>
-            Read the Section
+            ابدأ المسار
           </span>
 
           <span aria-hidden="true">
@@ -302,199 +224,156 @@
 
 
     <!-- =====================================================
-         SECTION MARKER INTERACTION
+         DECISION INTERACTION
     ====================================================== -->
 
     <section
-      class="marker-section"
-      id="sectionMarker"
+      class="decision-section"
+      id="decision"
     >
 
       <div class="section-heading reveal">
 
-        <div class="section-heading__code">
-          A–02
-        </div>
+        <span class="section-number">
+          01
+        </span>
 
         <div>
-
           <p class="section-kicker">
-            Section Marker
+            مسار القرار
           </p>
 
           <h2>
-            Move through<br>
-            the drawing.
+            ثلاثة عناصر.<br>
+            قرار واحد.
           </h2>
-
         </div>
 
       </div>
 
 
-      <div
-        class="marker-interface reveal"
-        id="markerInterface"
-      >
+      <div class="decision-interface reveal">
 
         <div
-          class="marker-grid"
+          class="decision-map"
           aria-hidden="true"
         >
 
-          <span class="grid-line grid-line--v1"></span>
-          <span class="grid-line grid-line--v2"></span>
-          <span class="grid-line grid-line--v3"></span>
-
-          <span class="grid-line grid-line--h1"></span>
-          <span class="grid-line grid-line--h2"></span>
-
-
-          <span
-            class="section-marker"
-            id="sectionMarkerGraphic"
+          <svg
+            viewBox="0 0 500 470"
+            preserveAspectRatio="none"
           >
-            <i></i>
+
+            <path
+              class="decision-map__base"
+              d="
+                M250 20
+                L250 120
+                C250 170 95 170 95 250
+                L95 350
+
+                M250 120
+                L250 350
+
+                M250 120
+                C250 170 405 170 405 250
+                L405 350
+              "
+            />
+
+            <path
+              id="activeDecisionPath"
+              class="decision-map__active"
+              d="
+                M250 20
+                L250 120
+                C250 170 95 170 95 250
+                L95 350
+              "
+            />
+
+          </svg>
+
+
+          <span class="decision-origin">
+            قرار
           </span>
 
 
-          <span
-            class="marker-axis-label marker-axis-label--1"
-          >
-            01
+          <span class="decision-map-node decision-map-node--vision">
+            رؤية
           </span>
 
-          <span
-            class="marker-axis-label marker-axis-label--2"
-          >
-            02
+          <span class="decision-map-node decision-map-node--team">
+            فريق
           </span>
 
-          <span
-            class="marker-axis-label marker-axis-label--3"
-          >
-            03
-          </span>
-
-          <span
-            class="marker-axis-label marker-axis-label--4"
-          >
-            04
+          <span class="decision-map-node decision-map-node--execution">
+            تنفيذ
           </span>
 
         </div>
 
 
-        <div class="marker-readout">
+        <div class="decision-content">
 
-          <p
-            class="marker-readout__code"
-            id="markerCode"
+          <span
+            class="decision-content__index"
+            id="decisionIndex"
           >
-            SECTION / 01
-          </p>
+            01 / الرؤية
+          </span>
 
-          <h3 id="markerTitle">
-            Human Scale
+          <h3 id="decisionTitle">
+            قبل القرار هناك رؤية.
           </h3>
 
-          <p id="markerDescription">
-            A conference about architecture measured through everyday human experience.
+          <p id="decisionDescription">
+            كيف يحوّل القائد الاتجاه العام إلى صورة واضحة يستطيع الفريق فهمها والعمل من خلالها.
           </p>
-
-        </div>
-
-
-        <div class="marker-control">
-
-          <label for="markerRange">
-            Move section marker
-          </label>
-
-          <input
-            id="markerRange"
-            type="range"
-            min="0"
-            max="100"
-            value="0"
-            step="1"
-            aria-label="Move through conference information"
-          >
-
-
-          <div
-            class="marker-control__labels"
-            aria-hidden="true"
-          >
-
-            <span>
-              THEME
-            </span>
-
-            <span>
-              DATE
-            </span>
-
-            <span>
-              VENUE
-            </span>
-
-            <span>
-              KEYNOTE
-            </span>
-
-          </div>
 
         </div>
 
 
         <div
-          class="marker-buttons"
+          class="decision-buttons"
           role="tablist"
-          aria-label="Conference drawing sections"
+          aria-label="محاور مسار القرار"
         >
 
           <button
-            class="marker-button is-active"
+            class="decision-button is-active"
             type="button"
             role="tab"
             aria-selected="true"
-            data-marker-index="0"
+            data-decision="0"
           >
-            Theme
+            <span>01</span>
+            <strong>الرؤية</strong>
           </button>
 
 
           <button
-            class="marker-button"
+            class="decision-button"
             type="button"
             role="tab"
             aria-selected="false"
-            data-marker-index="1"
+            data-decision="1"
           >
-            Date
+            <span>02</span>
+            <strong>الفريق</strong>
           </button>
 
 
           <button
-            class="marker-button"
+            class="decision-button"
             type="button"
             role="tab"
             aria-selected="false"
-            data-marker-index="2"
+            data-decision="2"
           >
-            Venue
-          </button>
-
-
-          <button
-            class="marker-button"
-            type="button"
-            role="tab"
-            aria-selected="false"
-            data-marker-index="3"
-          >
-            Keynote
+            <span>03</span>
+            <strong>التنفيذ</strong>
           </button>
 
         </div>
@@ -512,107 +391,106 @@
 
       <div class="section-heading reveal">
 
-        <div class="section-heading__code">
-          A–03
-        </div>
+        <span class="section-number">
+          02
+        </span>
 
         <div>
-
           <p class="section-kicker">
-            Temporal Dimensions
+            المسافة الزمنية
           </p>
 
           <h2>
-            Time measured<br>
-            as distance.
+            كل يوم يقربنا<br>
+            من نقطة اللقاء.
           </h2>
+        </div>
 
+      </div>
+
+
+      <div class="countdown-path reveal">
+
+        <div class="countdown-path__start">
+          اليوم
+        </div>
+
+
+        <div class="countdown-path__rail">
+
+          <span
+            class="countdown-path__progress"
+            id="countdownProgress"
+          ></span>
+
+          <span
+            class="countdown-path__marker"
+            id="countdownMarker"
+          ></span>
+
+        </div>
+
+
+        <div class="countdown-path__end">
+          الملتقى
         </div>
 
       </div>
 
 
       <div
-        class="dimension-countdown"
-        aria-label="Countdown to conference"
+        class="countdown-grid"
+        aria-label="الوقت المتبقي للملتقى"
       >
 
-        <div class="dimension-unit reveal">
-
-          <span class="dimension-unit__tick"></span>
-
-          <strong id="countdownDays">
-            00
-          </strong>
+        <div class="countdown-main reveal">
 
           <span>
-            DAYS
+            الأيام
           </span>
+
+          <strong id="days">
+            00
+          </strong>
 
         </div>
 
 
-        <div class="dimension-unit reveal">
+        <div class="countdown-secondary">
 
-          <span class="dimension-unit__tick"></span>
+          <div class="countdown-small reveal">
+            <span>
+              ساعة
+            </span>
 
-          <strong id="countdownHours">
-            00
-          </strong>
-
-          <span>
-            HOURS
-          </span>
-
-        </div>
+            <strong id="hours">
+              00
+            </strong>
+          </div>
 
 
-        <div class="dimension-unit reveal">
+          <div class="countdown-small reveal">
+            <span>
+              دقيقة
+            </span>
 
-          <span class="dimension-unit__tick"></span>
-
-          <strong id="countdownMinutes">
-            00
-          </strong>
-
-          <span>
-            MIN
-          </span>
-
-        </div>
+            <strong id="minutes">
+              00
+            </strong>
+          </div>
 
 
-        <div class="dimension-unit reveal">
+          <div class="countdown-small reveal">
+            <span>
+              ثانية
+            </span>
 
-          <span class="dimension-unit__tick"></span>
-
-          <strong id="countdownSeconds">
-            00
-          </strong>
-
-          <span>
-            SEC
-          </span>
+            <strong id="seconds">
+              00
+            </strong>
+          </div>
 
         </div>
-
-      </div>
-
-
-      <div class="dimension-track reveal">
-
-        <span class="dimension-track__tick"></span>
-
-        <span class="dimension-track__line">
-
-          <span
-            class="dimension-track__progress"
-            id="countdownProgress"
-          ></span>
-
-        </span>
-
-        <span class="dimension-track__tick"></span>
 
       </div>
 
@@ -622,141 +500,77 @@
         id="countdownMessage"
         aria-live="polite"
       >
-        Distance to opening is decreasing.
+        المسار يتقدم نحو موعد الملتقى.
       </p>
 
     </section>
 
 
     <!-- =====================================================
-         KEYNOTE
+         SPEAKERS
     ====================================================== -->
 
-    <section class="keynote-section">
+    <section class="speakers-section">
 
       <div class="section-heading reveal">
 
-        <div class="section-heading__code">
-          A–04
-        </div>
+        <span class="section-number">
+          03
+        </span>
 
         <div>
-
           <p class="section-kicker">
-            Principal Detail
+            أصوات القيادة
           </p>
 
           <h2>
-            One architect.<br>
-            One central question.
+            ثلاث تجارب.<br>
+            ثلاث زوايا للقرار.
           </h2>
-
-        </div>
-
-      </div>
-
-
-      <article class="keynote-drawing reveal">
-
-        <div class="keynote-drawing__axis">
-          <span>
-            K
-          </span>
-        </div>
-
-
-        <div class="keynote-drawing__content">
-
-          <p class="keynote-label">
-            Opening Keynote
-          </p>
-
-          <h3 id="keynoteName">
-            Lina Haddad
-          </h3>
-
-          <p
-            class="keynote-role"
-            id="keynoteRole"
-          >
-            Architect & Urban Researcher
-          </p>
-
-          <p
-            class="keynote-organization"
-            id="keynoteOrganization"
-          >
-            Common Ground Studio
-          </p>
-
-
-          <div class="keynote-topic">
-
-            <span>
-              TOPIC
-            </span>
-
-            <blockquote id="keynoteTopic">
-              Designing at the Scale of Everyday Life
-            </blockquote>
-
-          </div>
-
-        </div>
-
-
-        <div
-          class="keynote-drawing__diagram"
-          aria-hidden="true"
-        >
-
-          <span class="diagram-floor diagram-floor--1"></span>
-          <span class="diagram-floor diagram-floor--2"></span>
-          <span class="diagram-floor diagram-floor--3"></span>
-
-          <span class="diagram-column diagram-column--1"></span>
-          <span class="diagram-column diagram-column--2"></span>
-
-          <span class="diagram-person"></span>
-
-        </div>
-
-      </article>
-
-    </section>
-
-
-    <!-- =====================================================
-         THEMES / AGENDA
-    ====================================================== -->
-
-    <section class="layers-section">
-
-      <div class="section-heading reveal">
-
-        <div class="section-heading__code">
-          A–05
-        </div>
-
-        <div>
-
-          <p class="section-kicker">
-            Program Layers
-          </p>
-
-          <h2>
-            Three layers.<br>
-            One city.
-          </h2>
-
         </div>
 
       </div>
 
 
       <div
-        class="layer-list"
-        id="layerList"
+        class="speakers-list"
+        id="speakersList"
+      >
+        <!-- JavaScript -->
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         AGENDA
+    ====================================================== -->
+
+    <section class="agenda-section">
+
+      <div class="section-heading reveal">
+
+        <span class="section-number">
+          04
+        </span>
+
+        <div>
+          <p class="section-kicker">
+            قرارات اليوم
+          </p>
+
+          <h2>
+            البرنامج ليس جدولاً.<br>
+            بل ثلاث نقاط حاسمة.
+          </h2>
+        </div>
+
+      </div>
+
+
+      <div
+        class="agenda-path"
+        id="agendaList"
       >
         <!-- JavaScript -->
       </div>
@@ -770,80 +584,89 @@
 
     <section class="venue-section">
 
-      <div class="venue-layout">
+      <div class="section-heading reveal">
 
-        <div class="venue-copy reveal">
+        <span class="section-number">
+          05
+        </span>
 
-          <p class="drawing-code">
-            A–06 / LOCATION
+        <div>
+          <p class="section-kicker">
+            المحطة الأخيرة
           </p>
+
+          <h2>
+            حين تصل المسارات<br>
+            إلى مكان واحد.
+          </h2>
+        </div>
+
+      </div>
+
+
+      <div class="venue-card reveal">
+
+        <div
+          class="venue-route"
+          aria-hidden="true"
+        >
+
+          <span class="venue-route__line"></span>
+
+          <span class="venue-route__node venue-route__node--1"></span>
+          <span class="venue-route__node venue-route__node--2"></span>
+
+          <span class="venue-route__destination">
+            <i></i>
+          </span>
+
+        </div>
+
+
+        <div class="venue-copy">
+
+          <span class="venue-label">
+            نقطة الوصول
+          </span>
 
 
           <p
             class="venue-city"
             id="venueCity"
           >
-            ERBIL
+            بغداد
           </p>
 
 
-          <h2 data-field="venue">
-            Erbil Design Center
-          </h2>
+          <h3 data-field="venue">
+            مركز بغداد للمؤتمرات والقيادة
+          </h3>
 
 
           <p id="venueCountry">
-            Erbil / Iraq
+            العراق
           </p>
 
-        </div>
 
+          <a
+            id="mapButton"
+            class="venue-button"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>
+              فتح الموقع
+            </span>
 
-        <div
-          class="venue-plan reveal"
-          aria-hidden="true"
-        >
-
-          <span class="plan-boundary"></span>
-
-          <span class="plan-wall plan-wall--1"></span>
-          <span class="plan-wall plan-wall--2"></span>
-          <span class="plan-wall plan-wall--3"></span>
-          <span class="plan-wall plan-wall--4"></span>
-
-          <span class="plan-axis plan-axis--x"></span>
-          <span class="plan-axis plan-axis--y"></span>
-
-          <span class="plan-pin">
-            <i></i>
-          </span>
-
-          <span class="plan-label">
-            SITE
-          </span>
+            <span aria-hidden="true">
+              ↗
+            </span>
+          </a>
 
         </div>
 
       </div>
-
-
-      <a
-        id="mapButton"
-        class="map-link reveal"
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-
-        <span>
-          Locate Building
-        </span>
-
-        <span aria-hidden="true">
-          ↗
-        </span>
-
-      </a>
 
     </section>
 
@@ -859,21 +682,19 @@
 
       <div class="section-heading reveal">
 
-        <div class="section-heading__code">
-          A–07
-        </div>
+        <span class="section-number">
+          06
+        </span>
 
         <div>
-
           <p class="section-kicker">
-            Drawing Issue
+            القرار التالي
           </p>
 
           <h2>
-            Your invitation<br>
-            is ready to issue.
+            دورك الآن<br>
+            أن تختار خطوتك.
           </h2>
-
         </div>
 
       </div>
@@ -890,14 +711,15 @@
         <span>
 
           <small>
-            ATTENDANCE
+            المشاركة
           </small>
 
           <strong>
-            REGISTER FOR THE CONFERENCE
+            سجل في الملتقى
           </strong>
 
         </span>
+
 
         <span aria-hidden="true">
           ↗
@@ -913,19 +735,17 @@
           class="action-row reveal"
           type="button"
         >
-
-          <span class="action-row__code">
-            C–01
+          <span class="action-index">
+            01
           </span>
 
-          <span>
-            Add to Calendar
-          </span>
+          <strong>
+            إضافة إلى التقويم
+          </strong>
 
           <span aria-hidden="true">
             +
           </span>
-
         </button>
 
 
@@ -936,19 +756,17 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-
-          <span class="action-row__code">
-            M–02
+          <span class="action-index">
+            02
           </span>
 
-          <span>
-            Google Maps
-          </span>
+          <strong>
+            موقع الملتقى
+          </strong>
 
           <span aria-hidden="true">
             ↗
           </span>
-
         </a>
 
 
@@ -957,19 +775,17 @@
           class="action-row reveal"
           type="button"
         >
-
-          <span class="action-row__code">
-            S–03
+          <span class="action-index">
+            03
           </span>
 
-          <span>
-            Share Invitation
-          </span>
+          <strong>
+            مشاركة الدعوة
+          </strong>
 
           <span aria-hidden="true">
             +
           </span>
-
         </button>
 
       </div>
@@ -984,24 +800,27 @@
     <section class="closing-section">
 
       <div
-        class="closing-axis"
+        class="closing-path"
         aria-hidden="true"
       >
+        <span class="closing-path__branch closing-path__branch--1"></span>
+        <span class="closing-path__branch closing-path__branch--2"></span>
+        <span class="closing-path__branch closing-path__branch--3"></span>
 
-        <span></span>
-        <i></i>
-
+        <span class="closing-path__center">
+          <i></i>
+        </span>
       </div>
 
 
-      <p class="closing-code reveal">
-        END / SECTION
+      <p class="closing-label reveal">
+        نهاية المسار / بداية القرار
       </p>
 
 
       <h2 class="reveal">
-        Architecture begins<br>
-        at human scale.
+        القرار الجيد<br>
+        يبدأ من رؤية واضحة.
       </h2>
 
 
@@ -1009,7 +828,7 @@
         class="closing-name reveal"
         data-field="shortName"
       >
-        A/HS 27
+        LDF 27
       </p>
 
     </section>
@@ -1024,9 +843,8 @@
   <footer class="footer">
 
     <div>
-
       <span data-field="name">
-        Architecture / Human Scale 2027
+        ملتقى القيادة وصناعة القرار 2027
       </span>
 
       <span>/</span>
@@ -1034,7 +852,6 @@
       <span id="footerYear">
         2027
       </span>
-
     </div>
 
 
@@ -1044,7 +861,7 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      Conference Website
+      الموقع الرسمي
     </a>
 
   </footer>
@@ -1059,11 +876,9 @@
 
 
   <noscript>
-
     <div class="noscript">
-      JavaScript is required for countdown, calendar and sharing features.
+      تحتاج بعض خصائص العد التنازلي والتقويم والمشاركة إلى JavaScript.
     </div>
-
   </noscript>
 
 
