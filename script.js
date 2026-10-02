@@ -2,57 +2,58 @@
 
 
 /* =========================================================
-   CONF-005 — SECTION / ELEVATION
+   CONF-006 — DECISION PATH
+   مسار القرار
 
-   EDIT ALL CLIENT INFORMATION HERE ONLY
+   جميع بيانات الزبون من هنا فقط
 ========================================================= */
 
 const CONFERENCE = {
 
   name:
-    "Architecture / Human Scale 2027",
+    "ملتقى القيادة وصناعة القرار 2027",
 
   shortName:
-    "A/HS 27",
+    "LDF 27",
 
   tagline:
-    "Designing the spaces between people and cities.",
+    "حين تتحول الرؤية إلى قرار",
 
   organizer:
-    "Urban Form Institute",
+    "مركز القيادة والتطوير المؤسسي",
 
 
   startAt:
-    "2027-09-18T09:00:00+03:00",
+    "2027-11-16T09:00:00+03:00",
 
   endAt:
-    "2027-09-18T17:30:00+03:00",
+    "2027-11-16T17:00:00+03:00",
 
   timeZone:
     "Asia/Baghdad",
 
 
   venue:
-    "Erbil Design Center",
+    "مركز بغداد للمؤتمرات والقيادة",
 
   city:
-    "Erbil",
+    "بغداد",
 
   country:
-    "Iraq",
+    "العراق",
 
 
   /*
-    Leave empty to automatically build
-    a Google Maps search URL.
+    اتركه فارغاً ليتم إنشاء رابط
+    Google Maps تلقائياً.
   */
   mapsUrl:
     "",
 
 
   /*
-    External registration URL.
-    Leave empty to hide registration button.
+    رابط التسجيل الخارجي.
+    إذا تركته فارغاً يختفي زر التسجيل.
   */
   registrationUrl:
     "https://example.com/register",
@@ -63,120 +64,140 @@ const CONFERENCE = {
 
 
   /*
-    Leave empty to use current invitation URL.
+    إذا ترك فارغاً يستخدم رابط
+    الدعوة الحالي تلقائياً.
   */
   shareUrl:
     "",
 
 
-  keynote: {
-
-    name:
-      "Lina Haddad",
-
-    role:
-      "Architect & Urban Researcher",
-
-    organization:
-      "Common Ground Studio",
-
-    topic:
-      "Designing at the Scale of Everyday Life"
-
-  },
-
-
-  markerSections: [
+  decisions: [
 
     {
-      code:
-        "SECTION / 01",
+      label:
+        "الرؤية",
 
       title:
-        "Human Scale",
+        "قبل القرار هناك رؤية.",
 
       description:
-        "A conference about architecture measured through everyday human experience."
+        "كيف يحوّل القائد الاتجاه العام إلى صورة واضحة يستطيع الفريق فهمها والعمل من خلالها."
     },
 
     {
-      code:
-        "SECTION / 02",
+      label:
+        "الفريق",
 
       title:
-        "18 September",
+        "القرار لا يتحرك وحده.",
 
       description:
-        "One day of focused architectural discussion, beginning at 09:00 and closing at 17:30."
+        "كيف تُبنى الثقة وتُوزع المسؤوليات بحيث يصبح الفريق جزءاً من القرار وليس مجرد منفذ له."
     },
 
     {
-      code:
-        "SECTION / 03",
+      label:
+        "التنفيذ",
 
       title:
-        "Erbil Design Center",
+        "القيمة تظهر عند التنفيذ.",
 
       description:
-        "The conference meets in Erbil, where architecture, urban growth and contemporary design intersect."
-    },
-
-    {
-      code:
-        "SECTION / 04",
-
-      title:
-        "Lina Haddad",
-
-      description:
-        "Opening keynote: Designing at the Scale of Everyday Life."
+        "كيف يتحول القرار من فكرة جيدة إلى خطوات عملية قابلة للقياس والمتابعة والتطوير."
     }
 
   ],
 
 
-  layers: [
+  speakers: [
 
     {
-      level:
-        "L01",
+      theme:
+        "الرؤية",
 
+      name:
+        "د. سامر العلي",
+
+      role:
+        "مستشار في القيادة الاستراتيجية",
+
+      organization:
+        "معهد التطوير المؤسسي"
+    },
+
+    {
+      theme:
+        "الفريق",
+
+      name:
+        "أ. نور حسن",
+
+      role:
+        "خبيرة في بناء فرق العمل",
+
+      organization:
+        "مركز القيادة الحديثة"
+    },
+
+    {
+      theme:
+        "التنفيذ",
+
+      name:
+        "م. علي ياسين",
+
+      role:
+        "مدير التحول المؤسسي",
+
+      organization:
+        "مجموعة آفاق"
+    }
+
+  ],
+
+
+  agenda: [
+
+    {
       time:
         "10:00",
 
+      type:
+        "القرار الأول",
+
       title:
-        "Space",
+        "تحديد الاتجاه",
 
       description:
-        "How proportion, movement and everyday behavior shape architectural space."
+        "جلسة مركزة حول تحويل الرؤية العامة إلى أولويات واضحة وقابلة للفهم."
     },
 
     {
-      level:
-        "L02",
-
       time:
         "12:30",
 
+      type:
+        "القرار الثاني",
+
       title:
-        "Material",
+        "بناء المسؤولية",
 
       description:
-        "A discussion on material choices, climate, durability and local identity."
+        "نقاش حول دور الفريق في صناعة القرار وتوزيع الأدوار والثقة."
     },
 
     {
-      level:
-        "L03",
-
       time:
         "15:00",
 
+      type:
+        "القرار الثالث",
+
       title:
-        "City",
+        "من القرار إلى التنفيذ",
 
       description:
-        "The relationship between individual buildings and the larger urban fabric."
+        "كيف تتحول القرارات إلى إجراءات ومؤشرات متابعة ونتائج عملية."
     }
 
   ]
@@ -186,7 +207,7 @@ const CONFERENCE = {
 
 
 /* =========================================================
-   DATES
+   DATE OBJECTS
 ========================================================= */
 
 const START_DATE =
@@ -203,6 +224,7 @@ const END_DATE =
 
 let countdownTimer =
   null;
+
 
 
 /* =========================================================
@@ -227,50 +249,55 @@ const elements = {
     ),
 
 
-  markerCode:
+  decisionIndex:
     document.getElementById(
-      "markerCode"
+      "decisionIndex"
     ),
 
-  markerTitle:
+  decisionTitle:
     document.getElementById(
-      "markerTitle"
+      "decisionTitle"
     ),
 
-  markerDescription:
+  decisionDescription:
     document.getElementById(
-      "markerDescription"
+      "decisionDescription"
     ),
 
-  markerRange:
+  activeDecisionPath:
     document.getElementById(
-      "markerRange"
+      "activeDecisionPath"
     ),
 
 
-  countdownDays:
+  days:
     document.getElementById(
-      "countdownDays"
+      "days"
     ),
 
-  countdownHours:
+  hours:
     document.getElementById(
-      "countdownHours"
+      "hours"
     ),
 
-  countdownMinutes:
+  minutes:
     document.getElementById(
-      "countdownMinutes"
+      "minutes"
     ),
 
-  countdownSeconds:
+  seconds:
     document.getElementById(
-      "countdownSeconds"
+      "seconds"
     ),
 
   countdownProgress:
     document.getElementById(
       "countdownProgress"
+    ),
+
+  countdownMarker:
+    document.getElementById(
+      "countdownMarker"
     ),
 
   countdownMessage:
@@ -279,30 +306,14 @@ const elements = {
     ),
 
 
-  keynoteName:
+  speakersList:
     document.getElementById(
-      "keynoteName"
+      "speakersList"
     ),
 
-  keynoteRole:
+  agendaList:
     document.getElementById(
-      "keynoteRole"
-    ),
-
-  keynoteOrganization:
-    document.getElementById(
-      "keynoteOrganization"
-    ),
-
-  keynoteTopic:
-    document.getElementById(
-      "keynoteTopic"
-    ),
-
-
-  layerList:
-    document.getElementById(
-      "layerList"
+      "agendaList"
     ),
 
 
@@ -402,45 +413,36 @@ function populateConference() {
 
 
   elements.heroDate.textContent =
-    formatNumericDate(
+    formatArabicDate(
       START_DATE
     );
 
 
   elements.heroTime.textContent =
-    `${format24Time(START_DATE)} → ${format24Time(END_DATE)}`;
+    `${formatArabicTime(START_DATE)} — ${formatArabicTime(END_DATE)}`;
 
 
   elements.heroCity.textContent =
-    `${CONFERENCE.city} / ${CONFERENCE.country}`;
-
-
-  elements.keynoteName.textContent =
-    CONFERENCE.keynote.name;
-
-
-  elements.keynoteRole.textContent =
-    CONFERENCE.keynote.role;
-
-
-  elements.keynoteOrganization.textContent =
-    CONFERENCE.keynote.organization;
-
-
-  elements.keynoteTopic.textContent =
-    CONFERENCE.keynote.topic;
+    `${CONFERENCE.city} — ${CONFERENCE.country}`;
 
 
   elements.venueCity.textContent =
-    CONFERENCE.city.toUpperCase();
+    CONFERENCE.city;
 
 
   elements.venueCountry.textContent =
-    `${CONFERENCE.city} / ${CONFERENCE.country}`;
+    CONFERENCE.country;
 
 
   elements.footerYear.textContent =
-    START_DATE.getFullYear();
+    new Intl.NumberFormat(
+      "ar-IQ",
+      {
+        useGrouping: false
+      }
+    ).format(
+      START_DATE.getFullYear()
+    );
 
 
   configureLinks();
@@ -457,69 +459,45 @@ function populateConference() {
    DATE FORMAT
 ========================================================= */
 
-function formatNumericDate(date) {
+function formatArabicDate(date) {
 
-  const day =
-    new Intl.DateTimeFormat(
-      "en-GB",
-      {
-        timeZone:
-          CONFERENCE.timeZone,
+  return new Intl.DateTimeFormat(
+    "ar-IQ",
+    {
+      timeZone:
+        CONFERENCE.timeZone,
 
-        day:
-          "2-digit"
-      }
-    ).format(date);
+      day:
+        "numeric",
 
+      month:
+        "long",
 
-  const month =
-    new Intl.DateTimeFormat(
-      "en-GB",
-      {
-        timeZone:
-          CONFERENCE.timeZone,
-
-        month:
-          "2-digit"
-      }
-    ).format(date);
-
-
-  const year =
-    new Intl.DateTimeFormat(
-      "en-GB",
-      {
-        timeZone:
-          CONFERENCE.timeZone,
-
-        year:
-          "numeric"
-      }
-    ).format(date);
-
-
-  return `${day}.${month}.${year}`;
+      year:
+        "numeric"
+    }
+  ).format(date);
 
 }
 
 
 
-function format24Time(date) {
+function formatArabicTime(date) {
 
   return new Intl.DateTimeFormat(
-    "en-GB",
+    "ar-IQ",
     {
       timeZone:
         CONFERENCE.timeZone,
 
       hour:
-        "2-digit",
+        "numeric",
 
       minute:
         "2-digit",
 
       hour12:
-        false
+        true
     }
   ).format(date);
 
@@ -528,95 +506,41 @@ function format24Time(date) {
 
 
 /* =========================================================
-   MARKER INTERACTION
+   DECISION INTERACTION
 ========================================================= */
 
-function setupMarkerInteraction() {
+function setupDecisionInteraction() {
 
   const buttons =
     Array.from(
       document.querySelectorAll(
-        ".marker-button"
+        ".decision-button"
       )
     );
 
 
-  const positions =
-    [
-      7,
-      34,
-      66,
-      93
-    ];
+  const paths = [
 
+    `
+      M250 20
+      L250 120
+      C250 170 95 170 95 250
+      L95 350
+    `,
 
-  elements.markerRange
-    .addEventListener(
-      "input",
-      () => {
+    `
+      M250 20
+      L250 350
+    `,
 
-        const value =
-          Number(
-            elements.markerRange.value
-          );
+    `
+      M250 20
+      L250 120
+      C250 170 405 170 405 250
+      L405 350
+    `
 
-
-        document
-          .documentElement
-          .style
-          .setProperty(
-            "--marker-position",
-            `${value}%`
-          );
-
-
-        const index =
-          getClosestMarkerIndex(
-            value
-          );
-
-
-        updateMarkerContent(
-          index,
-          buttons,
-          false
-        );
-
-      }
-    );
-
-
-  elements.markerRange
-    .addEventListener(
-      "change",
-      () => {
-
-        const value =
-          Number(
-            elements.markerRange.value
-          );
-
-
-        const index =
-          getClosestMarkerIndex(
-            value
-          );
-
-
-        elements.markerRange.value =
-          positions[index];
-
-
-        document
-          .documentElement
-          .style
-          .setProperty(
-            "--marker-position",
-            `${positions[index]}%`
-          );
-
-      }
-    );
+  ];
 
 
   buttons.forEach(
@@ -628,27 +552,14 @@ function setupMarkerInteraction() {
 
           const index =
             Number(
-              button.dataset.markerIndex
+              button.dataset.decision
             );
 
 
-          elements.markerRange.value =
-            positions[index];
-
-
-          document
-            .documentElement
-            .style
-            .setProperty(
-              "--marker-position",
-              `${positions[index]}%`
-            );
-
-
-          updateMarkerContent(
+          selectDecision(
             index,
             buttons,
-            true
+            paths
           );
 
         }
@@ -658,60 +569,77 @@ function setupMarkerInteraction() {
   );
 
 
-  document
-    .documentElement
-    .style
-    .setProperty(
-      "--marker-position",
-      `${positions[0]}%`
-    );
+  buttons.forEach(
+    (button, index) => {
+
+      button.addEventListener(
+        "keydown",
+        event => {
+
+          if (
+            event.key !==
+              "ArrowLeft" &&
+            event.key !==
+              "ArrowRight"
+          ) {
+            return;
+          }
+
+
+          event.preventDefault();
+
+
+          const direction =
+            event.key === "ArrowLeft"
+              ? 1
+              : -1;
+
+
+          const nextIndex =
+            (
+              index +
+              direction +
+              buttons.length
+            ) %
+            buttons.length;
+
+
+          buttons[
+            nextIndex
+          ].focus();
+
+
+          selectDecision(
+            nextIndex,
+            buttons,
+            paths
+          );
+
+        }
+      );
+
+    }
+  );
 
 }
 
 
 
 /* =========================================================
-   CLOSEST MARKER
+   SELECT DECISION
 ========================================================= */
 
-function getClosestMarkerIndex(value) {
-
-  if (value < 22) {
-    return 0;
-  }
-
-
-  if (value < 50) {
-    return 1;
-  }
-
-
-  if (value < 78) {
-    return 2;
-  }
-
-
-  return 3;
-
-}
-
-
-
-/* =========================================================
-   UPDATE MARKER CONTENT
-========================================================= */
-
-function updateMarkerContent(
+function selectDecision(
   index,
   buttons,
-  animate = true
+  paths
 ) {
 
-  const data =
-    CONFERENCE.markerSections[index];
+  const decision =
+    CONFERENCE.decisions[index];
 
 
-  if (!data) {
+  if (!decision) {
     return;
   }
 
@@ -738,25 +666,31 @@ function updateMarkerContent(
   );
 
 
+  elements.activeDecisionPath
+    .setAttribute(
+      "d",
+      paths[index]
+    );
+
+
   const applyContent =
     () => {
 
-      elements.markerCode.textContent =
-        data.code;
+      elements.decisionIndex.textContent =
+        `${formatNumber(index + 1)} / ${decision.label}`;
 
 
-      elements.markerTitle.textContent =
-        data.title;
+      elements.decisionTitle.textContent =
+        decision.title;
 
 
-      elements.markerDescription.textContent =
-        data.description;
+      elements.decisionDescription.textContent =
+        decision.description;
 
     };
 
 
   if (
-    !animate ||
     prefersReducedMotion()
   ) {
 
@@ -767,12 +701,13 @@ function updateMarkerContent(
   }
 
 
-  const readout =
-    elements.markerTitle.parentElement;
+  const container =
+    elements.decisionTitle
+      .parentElement;
 
 
-  const fadeOut =
-    readout.animate(
+  const fade =
+    container.animate(
       [
         {
           opacity: 1,
@@ -783,7 +718,7 @@ function updateMarkerContent(
         {
           opacity: 0,
           transform:
-            "translateY(6px)"
+            "translateY(7px)"
         }
       ],
       {
@@ -799,18 +734,18 @@ function updateMarkerContent(
     );
 
 
-  fadeOut.onfinish =
+  fade.onfinish =
     () => {
 
       applyContent();
 
 
-      readout.animate(
+      container.animate(
         [
           {
             opacity: 0,
             transform:
-              "translateY(6px)"
+              "translateY(7px)"
           },
 
           {
@@ -838,17 +773,17 @@ function updateMarkerContent(
 
 
 /* =========================================================
-   LAYERS
+   SPEAKERS
 ========================================================= */
 
-function renderLayers() {
+function renderSpeakers() {
 
-  elements.layerList.innerHTML =
+  elements.speakersList.innerHTML =
     "";
 
 
-  CONFERENCE.layers.forEach(
-    layer => {
+  CONFERENCE.speakers.forEach(
+    (speaker, index) => {
 
       const article =
         document.createElement(
@@ -857,28 +792,32 @@ function renderLayers() {
 
 
       article.className =
-        "layer-item reveal";
+        "speaker reveal";
 
 
       article.innerHTML = `
 
-        <span class="layer-item__level">
-          ${escapeHTML(layer.level)}
+        <span class="speaker__number">
+          ${formatNumber(index + 1)}
         </span>
 
 
         <div>
 
-          <p class="layer-item__meta">
-            ${escapeHTML(layer.time)} / PROGRAM LAYER
+          <p class="speaker__theme">
+            ${escapeHTML(speaker.theme)}
           </p>
 
           <h3>
-            ${escapeHTML(layer.title)}
+            ${escapeHTML(speaker.name)}
           </h3>
 
-          <p>
-            ${escapeHTML(layer.description)}
+          <p class="speaker__role">
+            ${escapeHTML(speaker.role)}
+          </p>
+
+          <p class="speaker__organization">
+            ${escapeHTML(speaker.organization)}
           </p>
 
         </div>
@@ -886,7 +825,63 @@ function renderLayers() {
       `;
 
 
-      elements.layerList
+      elements.speakersList
+        .appendChild(
+          article
+        );
+
+    }
+  );
+
+}
+
+
+
+/* =========================================================
+   AGENDA
+========================================================= */
+
+function renderAgenda() {
+
+  elements.agendaList.innerHTML =
+    "";
+
+
+  CONFERENCE.agenda.forEach(
+    item => {
+
+      const article =
+        document.createElement(
+          "article"
+        );
+
+
+      article.className =
+        "agenda-item reveal";
+
+
+      article.innerHTML = `
+
+        <time class="agenda-item__time">
+          ${escapeHTML(item.time)}
+        </time>
+
+        <p class="agenda-item__type">
+          ${escapeHTML(item.type)}
+        </p>
+
+        <h3>
+          ${escapeHTML(item.title)}
+        </h3>
+
+        <p>
+          ${escapeHTML(item.description)}
+        </p>
+
+      `;
+
+
+      elements.agendaList
         .appendChild(
           article
         );
@@ -928,7 +923,9 @@ function updateCountdown() {
     now.getTime();
 
 
-  if (difference <= 0) {
+  if (
+    difference <= 0
+  ) {
 
     handleConferenceStarted(
       now
@@ -953,14 +950,20 @@ function updateCountdown() {
 
   const hours =
     Math.floor(
-      (totalSeconds % 86400) /
+      (
+        totalSeconds %
+        86400
+      ) /
       3600
     );
 
 
   const minutes =
     Math.floor(
-      (totalSeconds % 3600) /
+      (
+        totalSeconds %
+        3600
+      ) /
       60
     );
 
@@ -969,23 +972,23 @@ function updateCountdown() {
     totalSeconds % 60;
 
 
-  elements.countdownDays.textContent =
-    pad(days);
+  elements.days.textContent =
+    formatNumber(days);
 
 
-  elements.countdownHours.textContent =
-    pad(hours);
+  elements.hours.textContent =
+    formatTwoDigits(hours);
 
 
-  elements.countdownMinutes.textContent =
-    pad(minutes);
+  elements.minutes.textContent =
+    formatTwoDigits(minutes);
 
 
-  elements.countdownSeconds.textContent =
-    pad(seconds);
+  elements.seconds.textContent =
+    formatTwoDigits(seconds);
 
 
-  updateCountdownProgress(
+  updateCountdownPath(
     now
   );
 
@@ -994,10 +997,10 @@ function updateCountdown() {
 
 
 /* =========================================================
-   COUNTDOWN PROGRESS
+   COUNTDOWN PATH
 ========================================================= */
 
-function updateCountdownProgress(now) {
+function updateCountdownPath(now) {
 
   const ninetyDaysBefore =
     START_DATE.getTime() -
@@ -1014,7 +1017,7 @@ function updateCountdownProgress(now) {
     ninetyDaysBefore;
 
 
-  const progress =
+  const percentage =
     Math.max(
       0,
       Math.min(
@@ -1027,19 +1030,32 @@ function updateCountdownProgress(now) {
   elements.countdownProgress
     .style
     .width =
-      `${progress}%`;
+      `${percentage}%`;
+
+
+  /*
+    RTL progress:
+    marker moves from right to left.
+  */
+
+  elements.countdownMarker
+    .style
+    .right =
+      `${percentage}%`;
 
 }
 
 
 
 /* =========================================================
-   EVENT STARTED
+   CONFERENCE STARTED
 ========================================================= */
 
 function handleConferenceStarted(now) {
 
-  if (countdownTimer) {
+  if (
+    countdownTimer
+  ) {
 
     clearInterval(
       countdownTimer
@@ -1052,25 +1068,31 @@ function handleConferenceStarted(now) {
   }
 
 
-  elements.countdownDays.textContent =
-    "00";
+  elements.days.textContent =
+    "٠";
 
 
-  elements.countdownHours.textContent =
-    "00";
+  elements.hours.textContent =
+    "٠٠";
 
 
-  elements.countdownMinutes.textContent =
-    "00";
+  elements.minutes.textContent =
+    "٠٠";
 
 
-  elements.countdownSeconds.textContent =
-    "00";
+  elements.seconds.textContent =
+    "٠٠";
 
 
   elements.countdownProgress
     .style
     .width =
+      "100%";
+
+
+  elements.countdownMarker
+    .style
+    .right =
       "100%";
 
 
@@ -1080,12 +1102,12 @@ function handleConferenceStarted(now) {
   ) {
 
     elements.countdownMessage.textContent =
-      "Conference is currently in session.";
+      "الملتقى منعقد الآن.";
 
   } else {
 
     elements.countdownMessage.textContent =
-      "This conference has concluded.";
+      "انتهى موعد هذا الملتقى.";
 
   }
 
@@ -1207,11 +1229,11 @@ function downloadCalendar() {
       CONFERENCE.tagline,
 
       CONFERENCE.websiteUrl
-        ? `Website: ${CONFERENCE.websiteUrl}`
+        ? `الموقع الرسمي: ${CONFERENCE.websiteUrl}`
         : "",
 
       invitationUrl
-        ? `Invitation: ${invitationUrl}`
+        ? `رابط الدعوة: ${invitationUrl}`
         : ""
     ]
       .filter(Boolean)
@@ -1221,7 +1243,7 @@ function downloadCalendar() {
   const content =
 `BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Section Elevation Invitation//EN
+PRODID:-//Decision Path Invitation//AR
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
@@ -1283,7 +1305,7 @@ END:VCALENDAR`;
 
 
   announce(
-    "Calendar file downloaded."
+    "تم تنزيل ملف التقويم."
   );
 
 }
@@ -1316,7 +1338,7 @@ function createUID() {
   return (
     `${slugify(CONFERENCE.shortName)}` +
     `-${START_DATE.getTime()}` +
-    "@section-elevation"
+    "@decision-path"
   );
 
 }
@@ -1371,7 +1393,9 @@ async function shareInvitation() {
   };
 
 
-  if (navigator.share) {
+  if (
+    navigator.share
+  ) {
 
     try {
 
@@ -1381,7 +1405,7 @@ async function shareInvitation() {
 
 
       announce(
-        "Invitation shared."
+        "تمت مشاركة الدعوة."
       );
 
 
@@ -1408,7 +1432,7 @@ async function shareInvitation() {
 
 
 /* =========================================================
-   COPY FALLBACK
+   COPY
 ========================================================= */
 
 async function copyInvitationLink() {
@@ -1426,7 +1450,7 @@ async function copyInvitationLink() {
 
 
     announce(
-      "Invitation link copied."
+      "تم نسخ رابط الدعوة."
     );
 
   } catch (error) {
@@ -1482,13 +1506,13 @@ function fallbackCopy(text) {
 
 
     announce(
-      "Invitation link copied."
+      "تم نسخ رابط الدعوة."
     );
 
   } catch (error) {
 
     announce(
-      "Unable to copy the link automatically."
+      "تعذر نسخ الرابط تلقائياً."
     );
 
   }
@@ -1687,18 +1711,18 @@ function updateMeta(
   content
 ) {
 
-  const meta =
+  const element =
     document.querySelector(
       selector
     );
 
 
-  if (!meta) {
+  if (!element) {
     return;
   }
 
 
-  meta.setAttribute(
+  element.setAttribute(
     "content",
     content
   );
@@ -1810,13 +1834,28 @@ function addStructuredData() {
    HELPERS
 ========================================================= */
 
-function pad(number) {
+function formatNumber(number) {
 
-  return String(number)
-    .padStart(
-      2,
-      "0"
-    );
+  return new Intl.NumberFormat(
+    "ar-IQ",
+    {
+      useGrouping: false
+    }
+  ).format(number);
+
+}
+
+
+
+function formatTwoDigits(number) {
+
+  return formatNumber(
+    String(number)
+      .padStart(
+        2,
+        "0"
+      )
+  );
 
 }
 
@@ -1831,7 +1870,7 @@ function slugify(value = "") {
     .trim()
 
     .replace(
-      /[^a-z0-9]+/g,
+      /[^a-z0-9\u0600-\u06ff]+/g,
       "-"
     )
 
@@ -1917,9 +1956,11 @@ function init() {
 
   populateConference();
 
-  renderLayers();
+  renderSpeakers();
 
-  setupMarkerInteraction();
+  renderAgenda();
+
+  setupDecisionInteraction();
 
   setupActions();
 
